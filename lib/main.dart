@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:aplikasi_pertama/screen/profil.dart';
+import 'package:aplikasi_pertama/screen/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Profil(),
+      home: Dashboard(),
     );
   }
 }
