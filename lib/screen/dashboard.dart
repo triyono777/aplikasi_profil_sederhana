@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_pertama/data/data_profil.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -8,6 +9,8 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
+  DataProfil dataProfil = DataProfil();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,9 +18,9 @@ class _DashboardState extends State<Dashboard> {
         title: Text('List kontak'),
       ),
       body: ListView.builder(
-        itemCount: 5,
+        itemCount: dataProfil.listProfil.length,
         itemBuilder: (_, index) => ListTile(
-          title: Text('nama $index'),
+          title: Text('${dataProfil.listProfil[index].nama}'),
           leading: Icon(
             Icons.person,
           ),
