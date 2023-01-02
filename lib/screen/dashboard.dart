@@ -20,11 +20,14 @@ class _DashboardState extends State<Dashboard> {
       body: ListView.builder(
         itemCount: dataProfil.listProfil.length,
         itemBuilder: (_, index) => Card(
-          child: ListTile(
-            title: Text('${dataProfil.listProfil[index].nama}'),
-            subtitle: Text('${dataProfil.listProfil[index].alamat}'),
-            leading: Icon(
-              Icons.person,
+          child: InkWell(
+            onTap: () {},
+            child: ListTile(
+              title: Text('${dataProfil.listProfil[index].nama}'),
+              subtitle: Text('${dataProfil.listProfil[index].alamat}'),
+              leading: Icon(
+                Icons.person,
+              ),
             ),
           ),
         ),
