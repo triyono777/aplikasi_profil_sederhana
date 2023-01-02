@@ -44,14 +44,14 @@ class Profil extends StatelessWidget {
                   height: 30,
                 ),
                 Text(
-                  'James Martin',
+                  '${profil?.nama}',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 23,
                   ),
                 ),
                 Text(
-                  'Senior Graphic Desainer',
+                  '${profil?.pekerjaan}',
                   style: Theme.of(context)
                       .textTheme
                       .bodyLarge
