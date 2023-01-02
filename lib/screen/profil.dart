@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_pertama/data/model_profil.dart';
 
 class Profil extends StatelessWidget {
-  const Profil({super.key});
+  final ModelProfil? profil;
+
+  const Profil({
+    super.key,
+    this.profil,
+  });
 
   @override
   Widget build(BuildContext context) {
