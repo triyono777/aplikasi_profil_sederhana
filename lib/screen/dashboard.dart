@@ -14,6 +14,9 @@ class _DashboardState extends State<Dashboard> {
       appBar: AppBar(
         title: Text('List kontak'),
       ),
+      body: ListView.builder(
+        itemBuilder: (_, child) => ListTile(),
+      ),
     );
   }
 }
