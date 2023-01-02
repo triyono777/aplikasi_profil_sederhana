@@ -15,7 +15,13 @@ class _DashboardState extends State<Dashboard> {
         title: Text('List kontak'),
       ),
       body: ListView.builder(
-        itemBuilder: (_, index) => ListTile(),
+        itemCount: 5,
+        itemBuilder: (_, index) => ListTile(
+          title: Text('nama $index'),
+          leading: Icon(
+            Icons.person,
+          ),
+        ),
       ),
     );
   }
