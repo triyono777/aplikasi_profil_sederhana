@@ -26,7 +26,7 @@ class _DashboardState extends State<Dashboard> {
               print('di pencet ${dataProfil.listProfil[index].nama}');
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (_) => Profil(),
+                  builder: (_) => Profil(profil: dataProfil.listProfil[index]),
                 ),
               );
             },
