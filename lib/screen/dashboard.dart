@@ -15,7 +15,7 @@ class _DashboardState extends State<Dashboard> {
         title: Text('List kontak'),
       ),
       body: ListView.builder(
-        itemBuilder: (_, child) => ListTile(),
+        itemBuilder: (_, index) => ListTile(),
       ),
     );
   }
