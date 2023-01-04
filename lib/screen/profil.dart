@@ -7,7 +7,7 @@ class Profil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Profil'),
+        title: Text('Detail Profil '),
         centerTitle: true,
       ),
       body: Column(
